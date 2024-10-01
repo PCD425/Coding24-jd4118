@@ -1,0 +1,104 @@
+p{
+    color:grey;
+    font-size: 18px;
+    font-family: avenir, sans-serif;
+    font-weight: normal;
+    text-align: justify;
+}
+
+div{
+    width:80%;
+    margin: 10px auto;
+    background-color:azure;
+    border: 40px solid lightblue;
+    padding: 20px;
+    border-radius: 5%;
+}
+
+body{
+    background-color: skyblue;
+}
+
+header{
+    color: brown;
+    font-family:avenir, sans-serif;
+    font-size: 32px;
+    line-height: 1.0;
+    font-weight: 500;
+}
+
+.english>header{
+    text-align: left;
+}
+
+.spanish>header{
+    text-align: right;
+}
+
+h3{
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 0cap;
+}
+
+figure{
+    width: 90%;
+    margin: 0 auto;
+    opacity: 95%;
+    position:relative;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figure:hover{
+    opacity: 100%;
+    filter:contrast(130%);
+    transform: scale(1.2);
+    position:relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transition: 0.5s;
+    box-shadow: 15px 15px 50px black;
+}
+
+footer p{
+    text-align: right;
+    font-size: 14px;
+    color: darkblue;
+}
+
+span{
+    font-style: italic;
+    font-weight: bold;
+    color:brown
+}
+
+p em{
+    color: darkolivegreen;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/*not working, trying to figure it out*/
+p em::first-letter{
+    font-size: 3em !important;
+    font-weight: 800 !important;
+    float: left !important;
+    margin-right: 10px !important;
+    line-height: 1.2 !important;
+    color: darkgreen !important;
+}
+
+/*box styles*/
+* {
+    margin: 8;
+    padding: 8;
+    box-sizing: border-box;
+    }
