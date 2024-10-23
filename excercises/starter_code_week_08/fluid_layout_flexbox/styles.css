@@ -22,19 +22,23 @@ body {
 header,
 footer {
     height: 60px;
+    background-color: olivedrab;
 }
 
 main {
     flex: 1;
     display: flex; /* the parent of aside and section */
+    background-color: yellowgreen;
 }
 
 aside {
     flex-basis: 25%;
+    background-color: aqua;
 }
 
 section {
     flex-basis: 75%;
+    background-color: pink;
 }
 
 /*
