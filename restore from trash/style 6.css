@@ -1,0 +1,33 @@
+/*webpage layout*/
+
+body{
+    background-color: lightblue;
+}
+
+.my-class{
+    font-weight:bold;
+    color:pink;
+}
+
+p{
+    color: green;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.wrapper li{
+    color: orange;
+}
+
+.wrapper >p{
+    color:orange;
+    font-style: italic;
+}
+
+.wrapper a{
+    color:purple
+}
+
+h1:

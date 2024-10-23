@@ -1,0 +1,80 @@
+/*  clear out our default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2A4C80;
+    color: #E4E8E9;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* 添加字体设置 */
+}
+
+
+/* 1. Set up the outer container -- header footer and main section */
+.flex-outer-container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 20px;
+}
+
+header,
+footer {
+    height: 60px;
+    display: flex; /* 添加 Flex 布局 */
+    justify-content: center; /* 内容居中 */
+    align-items: center; /* 垂直居中 */
+    background-color: #1E3A60; /* 为header和footer添加背景色 */
+}
+
+main {
+    flex: 1;
+    padding: 20px; /* 添加内边距以防止内容贴近边缘 */
+}
+
+h3 {
+    font-size: 2em;
+    padding-bottom: .68em;
+    letter-spacing: .03em;
+    color: #F0F0F0; /* 为标题添加颜色以增强对比 */
+}
+
+/* On the main section add the grid property */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* establishes 3 columns */
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    padding: 20px; /* 增加内边距，保持布局整洁 */
+    background-color: #3e5a96; /* 添加背景色 */
+}
+
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap; /* 添加内容自动换行 */
+}
+
+.image-container, 
+.content-container {
+    width: 50%;
+    padding: 15px;
+}
+
+.content-container p {
+    line-height: 1.5em;
+    color: #D0D4D6; /* 提升可读性 */
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px; /* 为图像添加圆角 */
+}
+
+footer a {
+    color: #E4E8E9;
+    text-decoration: wavy underline; /* 修正为波浪形下划线 */
+}
