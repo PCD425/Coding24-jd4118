@@ -58,6 +58,11 @@ section.third {
     align-items: center; /* horizontally center on the page */
 }
 
+.card-wrapper img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
 
 /* typography */
 

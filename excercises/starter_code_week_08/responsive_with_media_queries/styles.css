@@ -38,7 +38,18 @@ img {
     border-top-left-radius: 0.75em;
 }
 
-@media only screen and (min-width : 768px) {}
+/* tablet version */
+/* 2 columns */
+@media only screen and (min-width : 768px) {
+    .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-
-@media only screen and (min-width : 1024px) {}
+/* desktop version */
+/* 3 columns*/
+@media only screen and (min-width : 1024px) {
+.grid-container{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
