@@ -82,9 +82,19 @@
             document.getElementById("cover").classList.add("hidden");
             document.getElementById("mainContent").classList.add("show");
             document.body.style.overflow = "auto";
+            localStorage.setItem("coverHidden", "true"); // Save state
         }
-    
-        document.body.style.overflow = "hidden";
+        
+        // Check if the cover was already hidden
+        window.onload = function() {
+            if (localStorage.getItem("coverHidden") === "true") {
+                document.getElementById("cover").classList.add("hidden");
+                document.getElementById("mainContent").classList.add("show");
+                document.body.style.overflow = "auto";
+            } else {
+                document.body.style.overflow = "hidden"; // Hide overflow if cover is shown
+            }
+        };
     </script>
 </body>
 </html>
