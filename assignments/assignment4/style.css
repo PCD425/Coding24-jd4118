@@ -105,7 +105,7 @@ p {
     text-align: justify;
 }
 
-.english,.Portugeuse{
+.english,.Portuguese{
     width: 95vw;
     margin: 10px auto;
     background-color: azure;
@@ -127,7 +127,7 @@ header {
     text-align: left;
 }
 
-.spanish > header {
+.Portuguese > header {
     text-align: right;
 }
 
