@@ -1,0 +1,19 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: aquamarine;
+    font-size: 16px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 20vh);
+    grid-gap: 1em;
+    width: 100%;
+}
+
+.cover_bg_img{
+    background-color: antiquewhite;
+}
