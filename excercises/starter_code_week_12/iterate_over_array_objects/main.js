@@ -72,3 +72,67 @@ const artists = [
         ]
     }
 ];
+
+const artist_container = document.querySelector(".artist-container");
+const input = document.querySelector("input");
+const filter_button = document.querySelector(".filter-button");
+const search_button = document.querySelector(".search-button");
+const sidebar = document.querySelector(".sidebar");
+//---------- RENDER DATA
+
+function renderAllArtists(data) {
+    data.forEach(function (artist) {
+      let img_container = document.createElement("div");
+      let artist_img = document.createElement("img");
+  
+      let image = artist.works[0]["image"];
+  
+      img_container.classList.add("image-container");
+      artist_img.setAttribute("src", image);
+  
+      img_container.appendChild(artist_img);
+      artist_container.appendChild(img_container);
+    });
+  }
+  
+  renderAllArtists(artists);
+  
+  //---------- SEARCH DATA
+  function searchArtists(artist) {
+    artists.filter((el) => el === artist.name);
+  }
+  
+  function getInputVal(event) {
+    event.preventDefault();
+    let artist = input.value;
+    console.log(artist);
+    searchArtists(artist);
+  }
+  
+  //---------- FILTER DATA
+  
+  function filterArtists() {
+    artist_container.innerHTML = "";
+    console.log("clicked", artists);
+  
+    let filtered = [];
+  
+    for (let i = 0; i < artists.length; i++) {
+      if (artists[i].name == "Mark Bradford") {
+        filtered.push(artists[i]);
+      }
+    }
+  
+    console.log(filtered);
+    renderAllArtists(filtered);
+  }
+  
+  function openMenu(e) {
+    e.preventDefault();
+    console.log("open menu on click");
+    sidebar.classList.toggle("active");
+  }
+  
+  // filter_button.addEventListener("click", openMenu);
+  search_button.addEventListener("click", getInputVal);
+  
